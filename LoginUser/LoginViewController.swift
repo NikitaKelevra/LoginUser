@@ -17,6 +17,13 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    @IBAction func logonButton() {
+        guard loginTextField.text == "User" && passTextField.text == "Password" else {
+            showAlert(with: "Ooops!", and: "Your Login or Password is wrong!")
+            return
+        }
+    }
+    
     @IBAction func forgotUserNameButton() {
         showAlert(with: "Ooops!", and: "Your Login is User")
     }
@@ -24,7 +31,6 @@ class LoginViewController: UIViewController {
     @IBAction func forgotPassButton() {
         showAlert(with: "Ooops!", and: "Your password is Password")
     }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let accessVC = segue.destination as? AccessViewController else { return }

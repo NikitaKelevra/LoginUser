@@ -15,8 +15,16 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
+    
+    @IBAction func forgotUserNameButton() {
+        showAlert(with: "Ooops!", and: "Your Login is User")
+    }
+    
+    @IBAction func forgotPassButton() {
+        showAlert(with: "Ooops!", and: "Your password is Password")
+    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let accessVC = segue.destination as? AccessViewController else { return }
@@ -24,10 +32,22 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
-        guard let loginVC = unwindSegue.destination as? LoginViewController else { return }
-        passTextField.text = nil
+        guard let _ = unwindSegue.source as? AccessViewController else { return }
+        passTextField.text  = nil
         loginTextField.text = nil
     }
+    
+    private func showAlert(with title: String, and message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default) { _ in
+            self.loginTextField.text = ""
+            self.passTextField.text = ""
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
+    
+    
     
     
     

@@ -17,10 +17,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qY1-2u-VlD">
-                                <rect key="frame" x="193" y="440" width="42" height="30"/>
+                                <rect key="frame" x="187" y="440" width="54" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
-                                    <segue destination="dDt-Wa-Kgt" kind="presentation" id="vZo-js-cmP"/>
+                                    <segue destination="dDt-Wa-Kgt" kind="show" id="11T-oG-eo2"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iUC-eU-Pi8">
@@ -36,10 +37,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4p5-qG-7a9">
                                 <rect key="frame" x="20" y="490" width="133" height="30"/>
                                 <state key="normal" title="Forgot User Name?"/>
+                                <connections>
+                                    <action selector="forgotUserNameButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="IMv-QA-x1s"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92U-N6-Ife">
                                 <rect key="frame" x="285" y="490" width="123" height="30"/>
                                 <state key="normal" title="Forgot Password?"/>
+                                <connections>
+                                    <action selector="forgotPassButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="qCh-zm-ZlB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -87,7 +94,8 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C32-an-3ae">
-                                <rect key="frame" x="186.66666666666666" y="421" width="55" height="30"/>
+                                <rect key="frame" x="179" y="418" width="70" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Log Out"/>
                                 <connections>
                                     <action selector="logOutButtom" destination="dDt-Wa-Kgt" eventType="touchUpInside" id="0IH-Su-N0m"/>
@@ -96,7 +104,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ey6-GM-oJe"/>
-                        <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
                         <constraints>
                             <constraint firstItem="C32-an-3ae" firstAttribute="centerY" secondItem="7cQ-iA-hVY" secondAttribute="centerY" id="Ban-0C-Thf"/>
                             <constraint firstItem="ey6-GM-oJe" firstAttribute="trailing" secondItem="GZe-um-vOk" secondAttribute="trailing" constant="50" id="GP5-T8-VyN"/>
@@ -105,6 +113,7 @@
                             <constraint firstItem="GZe-um-vOk" firstAttribute="leading" secondItem="ey6-GM-oJe" secondAttribute="leading" constant="50" id="lNj-KD-gf8"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="mlq-Mm-j86"/>
                     <connections>
                         <outlet property="helloTextField" destination="GZe-um-vOk" id="e2O-X7-4h9"/>
                     </connections>
@@ -119,8 +128,8 @@
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="tertiarySystemFillColor">
-            <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

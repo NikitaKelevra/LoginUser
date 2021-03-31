@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		84484EB02614CA3800F600D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84484EAF2614CA3800F600D6 /* AppDelegate.swift */; };
 		84484EB22614CA3800F600D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84484EB12614CA3800F600D6 /* SceneDelegate.swift */; };
-		84484EB42614CA3800F600D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84484EB32614CA3800F600D6 /* ViewController.swift */; };
+		84484EB42614CA3800F600D6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84484EB32614CA3800F600D6 /* LoginViewController.swift */; };
 		84484EB72614CA3800F600D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84484EB52614CA3800F600D6 /* Main.storyboard */; };
 		84484EB92614CA3800F600D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84484EB82614CA3800F600D6 /* Assets.xcassets */; };
 		84484EBC2614CA3800F600D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84484EBA2614CA3800F600D6 /* LaunchScreen.storyboard */; };
+		84484ECB2614E3A200F600D6 /* AccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84484ECA2614E3A200F600D6 /* AccessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84484EAC2614CA3800F600D6 /* LoginUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84484EAF2614CA3800F600D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84484EB12614CA3800F600D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84484EB32614CA3800F600D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84484EB32614CA3800F600D6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		84484EB62614CA3800F600D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84484EB82614CA3800F600D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84484EBB2614CA3800F600D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84484EBD2614CA3800F600D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84484ECA2614E3A200F600D6 /* AccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				84484EAF2614CA3800F600D6 /* AppDelegate.swift */,
 				84484EB12614CA3800F600D6 /* SceneDelegate.swift */,
-				84484EB32614CA3800F600D6 /* ViewController.swift */,
+				84484EB32614CA3800F600D6 /* LoginViewController.swift */,
+				84484ECA2614E3A200F600D6 /* AccessViewController.swift */,
 				84484EB52614CA3800F600D6 /* Main.storyboard */,
 				84484EB82614CA3800F600D6 /* Assets.xcassets */,
 				84484EBA2614CA3800F600D6 /* LaunchScreen.storyboard */,
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84484EB42614CA3800F600D6 /* ViewController.swift in Sources */,
+				84484EB42614CA3800F600D6 /* LoginViewController.swift in Sources */,
 				84484EB02614CA3800F600D6 /* AppDelegate.swift in Sources */,
+				84484ECB2614E3A200F600D6 /* AccessViewController.swift in Sources */,
 				84484EB22614CA3800F600D6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +300,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.nikitaKelevra.LoginUser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.nikitaKelevra.LoginUser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
